@@ -1,0 +1,24 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: 600;
+}
+.pagination li {
+  margin-inline: 10px;
+}
+
+.active {
+  background-color: green;
+  border-radius: 50%;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li.disabled a{
+color: gray;
+cursor: not-allowed;
+}
