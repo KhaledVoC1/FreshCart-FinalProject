@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
 import MainLayOut from "./Pages/MainLayOut/MainLayOut";
 import Home from "./Pages/Home/Home";
 import Cart from "./Pages/Cart/Cart";
@@ -23,7 +23,7 @@ import { Provider } from "react-redux";
 import { store } from "./Redux/Store";
 
 function App() {
-  let routers = createBrowserRouter([
+  let routers = createHashRouter([
     {
       path: "",
       element: <MainLayOut />,
